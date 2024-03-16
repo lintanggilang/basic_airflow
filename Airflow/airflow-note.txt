@@ -1,0 +1,15 @@
+https://www.youtube.com/watch?v=Sva8rDtlWi4&t=448s
+
+curl 'https://airflow.apache.org/docs/apache-airflow/2.8.1/docker-compose.yaml' -o 'docker-compose.yaml'
+
+mkdir dags
+mkdir logs
+mkdir plugins
+
+docker compose up airflow-init
+docker compose up
+
+localhost:8080
+
+docker compose down
+
